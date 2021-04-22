@@ -49,3 +49,6 @@ if (project.hasProperty("prod")) {
 		}
 	}
 }
+
+task stage(dependsOn: 'bootJar') {
+}
