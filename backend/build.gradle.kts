@@ -50,5 +50,10 @@ if (project.hasProperty("prod")) {
 	}
 }
 
-task stage(dependsOn: 'bootJar') {
+tasks.register("stage") {
+	dependsOn("bootJar")
 }
+
+
+
+
